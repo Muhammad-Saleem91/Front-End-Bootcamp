@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            max-width: 150px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            text-decoration: none;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <a href="https://docs.python.org/3.12/" target="_blank"> Explore Python Documentation
+            <img src="/python-logo.png" alt="Beautiful Mountain Landscape">
+        </a>
+        <a href="https://example.com/larger-image2.jpg" target="_blank">
+            <img src="https://example.com/thumbnail2.jpg" alt="Serene Beach at Sunset">
+        </a>
+        <a href="https://example.com/larger-image3.jpg" target="_blank">
+            <img src="https://example.com/thumbnail3.jpg" alt="Forest Trail in Autumn">
+        </a>
+        <a href="https://example.com/larger-image4.jpg" target="_blank">
+            <img src="https://example.com/thumbnail4.jpg" alt="City Skyline at Night">
+        </a>
+        <a href="https://example.com/larger-image5.jpg" target="_blank">
+            <img src="https://example.com/thumbnail5.jpg" alt="Desert Dunes at Sunrise">
+        </a>
+    </div>
+
+</body>
+
+</html>
